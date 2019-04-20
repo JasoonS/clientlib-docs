@@ -1,4 +1,4 @@
-This library is a [promise-based](https://www.promisejs.org) library. So every asynchronous call will return a native Javascript promise. If an error occurs, the library will throw it. This needs to be handles appropriately by the caller. It is up to you if you choose `promise` or `async/await` syntax for calling methods.
+This library is a [promise-based](https://www.promisejs.org) library. So every asynchronous call will return a native Javascript promise. If an error occurs, the library will throw it. This needs to be handled appropriately by the caller. It is up to you if you choose `promise` or `async/await` syntax for calling methods.
 
 #### Promise syntax
 ```javascript
@@ -17,7 +17,7 @@ tlNetwork
 try {
     const networks = await tlNetwork.currencyNetwork.getAll()
     console.log('Currency networks: ', networks)
-} catch {
+} catch (error) {
     console.log('Error: ', error)
 }
 ```
